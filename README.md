@@ -1,1 +1,1 @@
-Istallation: git clone https://github.com/BearShark-8bit/neuroevolution.git
+Istallation: ```git clone https://github.com/BearShark-8bit/neuroevolution.git```
