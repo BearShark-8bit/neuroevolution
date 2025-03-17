@@ -53,6 +53,9 @@ class NN_MSE(NN):
     ) -> np.float64:
         """train and return loss MSE"""
         pred, z, a = self(x)
+        chain = 1
+        for i in range(len(self.w)-1, -1, -1):
+            print(i)
 
         return np.mean((pred - y) ** 2).astype(np.float64)
 
