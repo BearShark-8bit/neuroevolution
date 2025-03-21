@@ -11,7 +11,7 @@ class NN:
     def __init__(
         self, *layer_shape: int, **config: typing.Callable[..., npt.NDArray[np.float64]]
     ) -> None:
-        self.w:  list[npt.NDArray[np.float64]] = []
+        self.w: list[npt.NDArray[np.float64]] = []
         self.b: list[npt.NDArray[np.float64]] = []
         try:
             self.func = config["func"]
@@ -54,7 +54,7 @@ class NN_MSE(NN):
         """train and return loss MSE"""
         pred, z, a = self(x)
         chain = 1
-        for i in range(len(self.w)-1, -1, -1):
+        for i in range(len(self.w) - 1, -1, -1):
             print(i)
 
         return np.mean((pred - y) ** 2).astype(np.float64)
