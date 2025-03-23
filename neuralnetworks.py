@@ -75,5 +75,7 @@ class EvolvingNeuralNetwork(NeuralNetwork):
     def mutate(self):
         pass
 
-    def __add__(self, other: "EvolvingNeuralNetwork"):  # crossover
-        pass
+    def __add__(
+        self, other: "EvolvingNeuralNetwork"
+    ) -> "EvolvingNeuralNetwork":  # crossover
+        return self
