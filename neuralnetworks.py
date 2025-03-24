@@ -73,9 +73,9 @@ class EvolvingNeuralNetwork(NeuralNetwork):
         super().__init__(*networkShape, **config)
 
     def mutate(self):
-        pass
+        self.weights[numpy]
 
     def __add__(
         self, other: "EvolvingNeuralNetwork"
     ) -> "EvolvingNeuralNetwork":  # crossover
-        return self
+        return self 
